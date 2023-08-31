@@ -1,0 +1,149 @@
+.tasks {
+    width: 100%;
+    height: 100%;
+    background-color: #1A1A1A;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.tasks-container {
+    display: flex;
+    flex-direction: column;
+    width: 736px;
+    margin-top: 91px;
+}
+
+.tasks-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.tasks-info > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.tasks-info > div > h1 {
+   font-size: 14px;
+}
+.tasks-info > div > span {
+    font-size: 14px;
+    background-color: #808080;
+    border-radius: 8px;
+    padding: 2px 8px;
+ }
+
+ .tasks-created > h1 {
+    color: #4EA8DE;
+ }
+
+ .tasks-finished > h1 {
+    color: #8284FA;
+ }
+
+
+ .tasks-empty {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    padding: 64px 0;
+
+    border-top: 2px solid #333333;
+    border-radius: 8px;
+ }
+
+ .tasks-empty > h1 {
+    font-size: 16px;
+    color: #808080;
+ }
+
+
+ .current-tasks {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-top: 24px;
+ }
+
+ .current-tasks:hover {
+    overflow-y: auto;
+  }
+
+ .task-id {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    background-color: #262626;
+    padding: 16px;
+    border-radius: 8px;
+ }
+
+
+
+ .task-id > h1 {
+    font-size: 14px;
+ }
+
+ .task-id > button {
+    background: none;
+    border: none;
+    cursor: pointer;
+ }
+
+
+ .task-id > input:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #262626;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #4EA8DE;
+}
+
+.task-id > input:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #5E60CE;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #5E60CE;
+}
+
+
+.task-selected > h1 {
+    text-decoration: line-through;
+    color: #808080;
+  }
+
+
+  
